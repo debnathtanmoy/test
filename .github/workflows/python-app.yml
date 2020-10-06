@@ -28,5 +28,4 @@ jobs:
     - name: Test with Unittest
       run: |
         pip install unittest2py3k
-        export PYTHONPATH=src
         unittest
