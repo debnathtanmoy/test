@@ -5,8 +5,8 @@ on: [push]
 jobs:
   build:
 
-    runs-on: windows-latest
-
+    runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v2
     - run: |
@@ -28,6 +28,5 @@ jobs:
     - name: Test with Unittest
       run: |
         pip install pytest
-        import sys
-        sys.path.insert(0,'D:\a\test\test\test/src/app.py')
+        export PYTHONPATH=src
         pytest 
