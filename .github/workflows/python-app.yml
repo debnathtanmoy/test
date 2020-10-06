@@ -28,4 +28,4 @@ jobs:
     - name: Test with Unittest
       run: |
         pip install pytest
-        pytest test/tests/app_test.py
+        pytest  D:\a\test\test\app_test.py
