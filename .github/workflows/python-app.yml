@@ -28,4 +28,4 @@ jobs:
     - name: Test with Unittest
       run: |
         pip install unittest2py3k
-         unittest2py3k run test/src/app.py
+        run test/tests/app_test.py
