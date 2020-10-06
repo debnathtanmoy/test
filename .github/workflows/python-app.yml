@@ -28,5 +28,4 @@ jobs:
     - name: Test with Unittest
       run: |
         pip install pytest
-        export PYTHONPATH=src
-        pytest
+        pytest test/tests/app_test.py
