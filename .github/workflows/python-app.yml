@@ -28,5 +28,6 @@ jobs:
     - name: Test with Unittest
       run: |
         pip install pytest
-        set PYTHONPATH=src
+        import sys
+        sys.path.insert(0,'D:\a\test\test\test/src/app.py')
         pytest 
