@@ -28,5 +28,5 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        echo "::add-path::./src"
+        set PYTHONPATH=%PYTHONPATH%;src
         pytest
